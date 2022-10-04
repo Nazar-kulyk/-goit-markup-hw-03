@@ -19,63 +19,66 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <div class="header-div" >
-          <a lang="en" class="logo" href="index.html">Web<span class="logo-st">Studio</span></a>
-          <div class="nav-div">
-            <nav>
-              <ul class="link">
-                <li><a class="link link-current" href="index.html">Студія</a></li>
-                <li><a class="link" href="portfolio.html">Портфолі</a></li>
-                <li><a class="link" href="#">Контакти</a></li>
+
+   <div class="container">
+      <header">
+       <div class="header-nav">
+          <nav class="header-nav-list">
+              <a lang="en" class="logo" href="index.html">Web<span class="logo-st">Studio</span></a>
+              
+              <ul class="nav-link">
+                <li class="nav-link-li"><a class="link link-current" href="index.html">Студія</a></li>
+                <li class="nav-link-li"><a class="link" href="portfolio.html">Портфолі</a></li>
+                <li class="nav-link-li"><a class="link" href="#">Контакти</a></li>
               </ul>
-            </nav>
-          </div>
+          </nav>
+          
+           <ul class="list-header-nav">
+                <li class="list-li">
+                  <a class="contact " href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
 
-          <ul class="list">
-            <li>
-              <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-
-            <li>
-              <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-          </ul>
+                <li class="list-li">
+                  <a class="contact " href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+           </ul>
         </div>
-      </header>
+       </header>
+
+      
 
       <main>
         <section class="decision">
+          
           <h1 class="decision-title">Ефективні рішення для вашого бізнесу</h1>
-       <!-- в стилях розібратись з margin -->
           <button class="menu-link-studio" type="button">Замовити послугу</button>
+          
         </section>
 
-        <section>
+        <section class="section-list">
           <ul class="list">
-            <li>
+            <li class="section-list-li-index">
               <h3 class="title">увага до деталей</h3>
               <p class="paragraph-title">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li>
+            <li class="section-list-li-index">
               <h3 class="title">пунктуальність</h3>
               <p class="paragraph-title">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li>
+            <li class="section-list-li-index">
               <h3 class="title">планування</h3>
               <p class="paragraph-title">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li>
+            <li class="section-list-li-index">
               <h3 class="title">сучасні технології</h3>
               <p class="paragraph-title">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -99,25 +102,36 @@
           <h2 class="title-second-level">Наша команда</h2>
           <ul class="list">
             <li class="ore-team-li">
-              <img src="/images/img001.jpg" alt="man with glasses" width="270" height="260" />
+              <div class="our-team-div">
+                <img src="/images/img001.jpg" alt="man with glasses" width="270" height="260" />
               <h3 class="title-third-level">Ігор Дем'яненко</h3>
               <p class="paragraph-title">Product Designer</p>
+
+              </div>
+              
             </li>
 
             <li class="ore-team-li">
-              <img src="/images/img002.jpg" alt="woman with glasses" width="270" height="260" />
+              <div class="our-team-div">
+                  <img src="/images/img002.jpg" alt="woman with glasses" width="270" height="260" />
               <h3 class="title-third-level">Ольга Рєпіна</h3>
               <p class="paragraph-title">Frontend Developer</p>
+              </div>
+              
             </li>
 
             <li class="ore-team-li">
-              <img src="/images/img003.jpg" alt="men" width="270" height="260" />
+              <div class="our-team-div">
+                <img src="/images/img003.jpg" alt="men" width="270" height="260" />
               <h3 class="title-third-level">Микола Тарасов</h3>
               <p class="paragraph-title">Marketing</p>
+              </div>
+              
             </li>
 
             <li class="ore-team-li">
-              <img
+              <div class="our-team-div">
+                <img
                 src="./images/img004.jpg"
                 alt="man with glasses in black t-shirt"
                 width="270"
@@ -125,6 +139,8 @@
               />
               <h3 class="title-third-level">Михайло Єрмаков</h3>
               <p class="paragraph-title">UI Designer</p>
+              </div>
+              
             </li>
           </ul>
         </section>
@@ -159,6 +175,6 @@
           </ul>
         </address>
       </footer>
-    </div>
+   </div>
   </body>
 </html>
