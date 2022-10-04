@@ -14,6 +14,15 @@ p {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /*------------------------- root ------------------------- */
 :root {
   --color-nav-link: #212121;
@@ -52,27 +61,21 @@ p {
   --box-shadow: #00000026;
   --menu-link-studio-focus-background: #188ce8;
 }
-
-/*------------------------- container ------------------------- */
-
+/*------------------------- index ------------------------- */
+/*---------header--------- */
 .container {
   width: 1230px;
   padding: 0px 15px;
   margin: 0 auto;
 }
-
-/*------------------------- header ------------------------- */
-
 .header-nav {
   display: flex;
   align-items: center;
 }
-
 .header-nav-list {
   display: flex;
   align-items: center;
 }
-/*----- logo ----- */
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -82,12 +85,9 @@ p {
   text-decoration: none;
   font-family: 'Raleway';
 }
-
 .logo-st {
   color: var(--color-logo-st);
 }
-/*----- link ----- */
-
 .nav-link {
   display: flex;
   font-family: 'Roboto';
@@ -102,11 +102,9 @@ p {
   margin-left: 93px;
   padding: 0;
 }
-
 .nav-link-li {
   margin-right: 50px;
 }
-
 .link {
   display: block;
   font-family: 'Roboto';
@@ -137,11 +135,12 @@ p {
   margin-left: auto;
   list-style-type: none;
 }
-
 .list-li {
   margin-right: 50px;
 }
-
+.list-li:last-child {
+  margin-right: 0px;
+}
 .contact {
   font-family: inherit;
   font-style: normal;
@@ -153,14 +152,18 @@ p {
   text-decoration: none;
   list-style-type: none;
 }
+.contact:hover {
+  color: var(--contact-hover);
+}
 
-/*------------------------- section decision ------------------------- */
+.contact:focus {
+  color: var(--contact-focus);
+}
 .decision {
   padding: 200px 252px 280px 252px;
   background-color: var(--decision-color);
   margin-bottom: 94px;
 }
-
 .decision-title {
   font-family: inherit;
   font-style: normal;
@@ -173,7 +176,6 @@ p {
   color: var(--decision-title-color);
   margin-top: auto;
 }
-
 .menu-link-studio {
   font-family: inherit;
   font-style: normal;
@@ -192,7 +194,6 @@ p {
   margin: auto;
   margin-top: 30px;
 }
-
 .menu-link-studio:hover {
   background: var(--menu-link-studio-hover-bacground);
   box-shadow: 0px 4px 4px var(--box-shadow);
@@ -204,10 +205,8 @@ p {
   box-shadow: 0px 4px 4px var(--box-shadow);
   border-radius: 4px;
 }
-/*------------------------- section whta do we do ------------------------- */
 .section-list {
 }
-
 .list {
   display: flex;
   /* flex-wrap: wrap; */
@@ -215,42 +214,51 @@ p {
   margin: 0px 0px 94px 0px;
   padding: 0;
 }
-
 .section-list-li-index {
   margin-right: 30px;
   /* padding-bottom: 10px */
   /*   width: 270px; */
 }
-
-.our-team {
-  background-color: var(--our-team-color);
+.section-list-li-index:last-child {
+  margin-right: 0;
 }
-
-.our-team-li {
-  background-color: var(--our-team-li-color);
-}
-
-.our-team-div {
-  background-color: #ffffff;
-}
-
-.title-third-level {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-
+.title {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  color: var(--title-third-level);
+  color: var(--title);
 }
-
 .paragraph-title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--paragraph-title);
 }
+/*---------what-do-we-do--------- */
+.what-do-we-do {
+  
+}
 
+
+
+
+
+
+
+
+
+
+
+
+.our-team {
+  background-color: var(--our-team-color);
+}
 .title-second-level {
   font-weight: 700;
   font-size: 36px;
@@ -260,34 +268,48 @@ p {
   color: var(--title-second-level);
   margin: 0px 402px 50px 402px;
 }
+.ore-team-li {
+  background-color: var(--our-team-li-color);
+}
+.our-team-div {
+  background-color: #ffffff;
+}
+.title-third-level {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 
-.what-we-do {
-  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-third-level);
+}
+.cont-info {
+  background-color: var(--cont-info);
+}
+.logo-ft {
+  color: var(--logo-ft);
+}
+.logo-ft-st {
+  color: var(--logo-ft-st);
+}
+.contact-info {
+  font-style: normal;
+}
+.kyiv {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--kyiv);
+  text-decoration: none;
+}
+.contact-ft {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-ft);
 }
 
-.list-wtah-we-do {
-  display: flex;
-}
-.second-level-li {
-  margin-right: 30px;
-}
-
-.section-list-li-index:last-child {
-  margin-right: 0;
-}
-
-.what-list-li {
-  margin: 30px;
-}
-
-.what-list-li:last-child {
-  margin: 0;
-}
-.title {
-  margin-bottom: 10px;
-}
-
-/*------------------------- menu-link ------------------------- */
+/*------------------------- portfolio ------------------------- */
 .menu-link {
   font-family: 'Roboto';
   font-style: normal;
@@ -302,36 +324,19 @@ p {
   border-radius: 4px;
   border: none;
 }
-
 .menu-link:hover {
   color: var(--menu-link-hover);
   background: var(--menu-portfolio);
   box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px #0000001f;
   border-radius: 4px;
 }
-
 .menu-link:focus {
   color: var(--menu-link-focus);
   background: var(--menu-portfolio);
 }
-/*------------------------- contact ------------------------- */
-
-.list-li {
-  margin-right: 50px;
+.list-a {
+  text-decoration: none;
 }
-
-.list-li:last-child {
-  margin-right: 0px;
-}
-
-.contact:hover {
-  color: var(--contact-hover);
-}
-
-.contact:focus {
-  color: var(--contact-focus);
-}
-/*------------------------- section ------------------------- */
 .title-portfolio {
   font-style: normal;
   font-weight: 700;
@@ -340,25 +345,13 @@ p {
   letter-spacing: 0.06em;
   color: var(--title-portfolio);
 }
-
 .paragraph-portfolio {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--paragraph-portfolio);
 }
-
-/*------------------------- footer ------------------------- */
-.cont-info {
-  background-color: var(--cont-info);
-}
-
-.kyiv {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--kyiv);
-  text-decoration: none;
+.cotact-info {
 }
 
 .kyiv:hover {
@@ -367,41 +360,4 @@ p {
 
 .kyiv:focus {
   color: var(--kyiv-focus);
-}
-
-.contact-ft {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--contact-ft);
-}
-/*------------------------- logo-ft ------------------------- */
-.logo-ft {
-  color: var(--logo-ft);
-}
-.logo-ft-st {
-  color: var(--logo-ft-st);
-}
-
-/*------------------------- index ------------------------- */
-
-/*------------------------- section ------------------------- */
-.title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--title);
-}
-
-.contact-info {
-  font-style: normal;
-}
-
-.list-a {
-  text-decoration: none;
 }
