@@ -248,6 +248,7 @@ img {
   color: var(--paragraph-title);
   padding-top: 10px;
   padding-bottom: 30px;
+  text-align: center;
 }
 /*---------what-do-we-do--------- */
 .what-do-we-do {
@@ -309,6 +310,8 @@ img {
   font-size: 16px;
   line-height: 1.18;
   padding-top: 30px;
+
+  text-align: center;
 
   letter-spacing: 0.03em;
 
