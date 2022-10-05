@@ -248,7 +248,6 @@ img {
   color: var(--paragraph-title);
   padding-top: 10px;
   padding-bottom: 30px;
-  text-align: center;
 }
 /*---------what-do-we-do--------- */
 .what-do-we-do {
@@ -316,6 +315,9 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--title-third-level);
+}
+.p-t-t {
+  text-align: center;
 }
 /*--------- fotter --------- */
 .cont-info {
