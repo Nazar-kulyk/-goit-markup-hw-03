@@ -31,7 +31,8 @@ img {
 
   letter-spacing: 0.03em;
   color: var(--title-second-level);
-  margin: 0px 402px 50px 402px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /*------------------------- root ------------------------- */
@@ -80,7 +81,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -178,11 +179,11 @@ img {
 .decision {
   padding: 200px 0px 200px 0px;
   background-color: var(--decision-color);
-  margin-bottom: 94px;
+  margin: auto;
 }
 .decision-title {
   font-family: inherit;
-  font-style: normal;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -210,6 +211,7 @@ img {
   cursor: pointer;
   margin: auto;
   margin-top: 30px;
+  padding: 10px 32px 10px 32px;
 }
 .menu-link-studio:hover {
   background: var(--menu-link-studio-hover-bacground);
@@ -222,13 +224,15 @@ img {
   box-shadow: 0px 4px 4px var(--box-shadow);
   border-radius: 4px;
 }
-
+.section-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list {
   display: flex;
   list-style-type: none;
-  margin: 0px 0px 94px 0px;
+
   padding: 0;
-  justify-content: space-between;
 }
 .section-list-li-index {
   margin-right: 30px;
@@ -256,17 +260,17 @@ img {
   color: var(--paragraph-title);
 }
 /*---------what-do-we-do--------- */
-
+.what-do-we-do {
+  padding-bottom: 94px;
+}
 .what-we-do-ul {
   display: flex;
   padding-right: 0;
   padding-left: 0;
   margin: 0;
   gap: 30px;
-  margin-bottom: 94px;
 }
 .what-we-do-li {
-  margin-right: 30px;
   padding: 0;
   flex-basis: calc((100% - 30px) / 3);
 }
@@ -278,6 +282,7 @@ img {
 .our-team {
   padding-bottom: 94px;
   background-color: var(--our-team-color);
+  padding-top: 94px;
 }
 .title-second-level-our-team {
   font-weight: 700;
@@ -286,8 +291,8 @@ img {
 
   letter-spacing: 0.03em;
   color: var(--title-second-level);
-  margin: 0px 453px 50px 453px;
-  padding-top: 94px;
+  margin: 50px;
+  text-align: center;
 }
 .list-our-team {
   display: flex;
@@ -297,7 +302,6 @@ img {
   gap: 30px;
 }
 .our-team-li {
-  margin-right: 30px;
   background-color: var(--our-team-li-color);
   flex-basis: calc((100% - 30px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -353,6 +357,9 @@ img {
 .l-fotter-li {
   margin-bottom: 9px;
 }
+.l-fotter-li:last-child {
+  margin-bottom: 0px;
+}
 .kyiv {
   font-size: 14px;
   line-height: 1.71;
@@ -370,13 +377,15 @@ img {
 /*------------------------- portfolio ------------------------- */
 .portfolio-header {
   border-bottom: 1px solid #ececec;
-  margin-bottom: 94px;
 }
-
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .nav-link-pt {
   display: flex;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -384,10 +393,9 @@ img {
   text-decoration: none;
   color: var(--color-nav-link);
   list-style-type: none;
-  margin: 0px 298px 34px 298px;
+  margin-bottom: 50px;
   padding: 0;
   justify-content: center;
-  align-items: center;
 }
 
 .n-l-p-li {
@@ -450,7 +458,7 @@ img {
   text-decoration: none;
 }
 .p-div-h-p {
-  padding-left: 24px;
+  padding: 20px 24px 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -470,13 +478,11 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--paragraph-portfolio);
-  margin-bottom: 20px;
 }
 
 .cont-info-p {
   background-color: var(--cont-info);
   padding: 60px 0px 60px 0px;
-  margin-top: 94px;
 }
 
 .kyiv:hover {
