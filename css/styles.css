@@ -458,7 +458,7 @@ img {
   text-decoration: none;
 }
 .p-div-h-p {
-  padding: 20px 24px 20px 24px;
+  padding: 20px 0px 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
